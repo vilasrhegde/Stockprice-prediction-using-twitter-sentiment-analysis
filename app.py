@@ -1,14 +1,10 @@
-from math import floor
-from tkinter.font import names
+
 from sklearn.ensemble import RandomForestRegressor
 import streamlit as st
 import dill
 
 import numpy as np
 import pandas as pd
-from nltk.corpus import subjectivity
-from nltk.sentiment import SentimentAnalyzer
-from nltk.sentiment.util import *
 import matplotlib.pyplot as mlpt
 
 model = dill.load(open('./randomForest.obj','rb'))
